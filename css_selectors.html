@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        p{
+            color: rebeccapurple;
+        }
+        #id-selector{
+            color: blue;
+        }
+        .c-selector{
+            color: green;
+        }
+        #text-overflow-ellipsis{
+            border: 1px solid;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 30rem;
+        }
+        #text-overflow-clip{
+            border: 1px solid;
+            white-space: nowrap;
+            text-overflow: clip;
+            overflow: hidden;
+            width: 30rem;
+        }
+        #text-overflow-hide{
+            border: 1px solid;
+            white-space: nowrap;
+            text-overflow: "akk";
+            overflow:hidden; 
+            width: 30rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>paraparapara</p>
+    <p id="id-selector">blue thru id</p>
+    <p class="c-selector">green thru class</p>
+    <div class="k" id="f">id selector precedes over class</div>
+    <div id="text-overflow-ellipsis"> ELLIPSIS STARTS HERE .. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, cupiditate. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolore alias quasi magnam optio! Quam nobis ducimus eligendi vitae. 
+    </div>
+    <br>
+    <div id="text-overflow-clip">
+        CLIPPING STARTS HERE    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis inventore dicta sint et tenetur veritatis, accusantium eum perspiciatis? Ratione reiciendis in dignissimos facilis atque nam dolor unde aperiam recusandae?
+    </div>
+    <br>
+    <div id="text-overflow-hide">
+        HIDING STARTS HERE Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus quis cupiditate nemo blanditiis, a voluptates libero in vel quibusdam beatae provident praesentium deleniti pariatur magni dicta dolor iste repellendus?
+    </div>
+</body>
+</html>

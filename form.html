@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form action="self">
+        <center>
+        <table>
+            <tr>
+                <td><label for="fn">Name:</label></td>
+                <td><input type="text" name="fn" placeholder="enter your name" size="20" required></td>
+            </tr>
+            <tr>
+                <td><label for="ln">Father Name:</label></td>
+                <td><input type="text" name="ln" placeholder="enter father name" size="20" required></td>
+            </tr>
+            <tr>
+                <td><label for="add">Postal Address</label></td>
+                <td><textarea name="add" id="add" cols="30" rows="3" placeholder="enter postal address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="add">Personal Address</label></td>
+                <td><textarea name="add" id="add" cols="30" rows="3" placeholder="enter personal address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Sex</label></td>
+                <td><input type="radio" name="gender" id="male">Male
+                    <input type="radio" name="gender" id="female">Female
+                </td>
+
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td><select name="city" id="city">
+                        <option value="ank">Ankleshwar</option>
+                        <option value="sur">Surat</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="branch">Course:</label></td>
+                <td><select name="branch" id="branch">
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="EC">EC</option>
+                        <option value="EE">EE</option>
+                </td>
+                </select>
+            </tr>
+
+            <tr>
+                <td><label for="district">District:</label></td>
+                <td><select name="district" id="district">
+                        <option value="CSE">Bharuch</option>
+                        <option value="IT">IT</option>
+                        <option value="EC">EC</option>
+                        <option value="EE">EE</option>
+                </td>
+                </select>
+            </tr>
+
+            <tr>
+                <td><label for="State">State</label></td>
+                <td><select name="State" id="State">
+                        <option value="CSE">Gujarat</option>
+                        <option value="IT">IT</option>
+                        <option value="EC">EC</option>
+                        <option value="EE">EE</option>
+                </td>
+                </select>
+            </tr>
+
+            <tr>
+                <td><label for="pin">PinCode</label></td>
+                <td><input type="text" size="6"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">EmailId</label></td>
+                <td><input type="email" name="email" id="email" size="20" placeholder="enter email" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">DOB</label></td>
+                <td><input type="date" name="dob" id="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">MobileNo</label></td>
+                <td><input type="number" name="phone" id="phone" size="10" placeholder="enter phone no." required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="submit">
+                <input type="reset" value="reset"></td>
+            </tr>
+        </table>
+        </center>
+    </form>
+
+</body>
