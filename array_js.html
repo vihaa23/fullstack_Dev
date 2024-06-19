@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body>
+    <script>
+        let myObj ={
+            name:"vihaa"
+        }
+        let arr = ["vihaa shah","9427107324", "IT", myObj,
+        {born:"2004", month: "dec"}]
+
+        let arr2 = [...arr]
+        arr[0]= "viral"
+        //let arr3 = []
+        console.log("array", arr)
+        console.log("accessing object from array",arr[3],)
+        // console.log("array with nested array", arr,arr[1].nestedObj.array[2])
+        console.log("array2",arr2)
+
+        //findIndex gives index if present and -1 if not present
+        let foundItem = arr2.findIndex(
+        (item)=>item == "9427107324"
+
+    )
+     console.log("array finding item",foundItem)
+
+     //finding elements
+     let arr4=[2,4,6,23]
+     let foundItemevery = arr4.every(
+        (item)=>item %2!=0
+     )
+
+     let foundItemsome = arr4.some(
+        (item) => item%2!=0
+     )
+     let foundItemfilter=arr4.filter(
+        (item) => item%2==0
+     )
+     console.log("filter>>",foundItemfilter)
+     console.log("some>>",foundItemsome)//or operator-if some elements satistfies the condition =>TRUE
+     console.log("every>>",foundItemevery) // and operator-if every condition is satisfied =>FALSE
+
+
+     //checking authorization
+     let arrOfObj=[
+        {
+            name: "vihaa",
+            age:"12",
+            check: "notAuthorized"
+        },
+        {
+            name: "shyeni",
+            age:"13",
+            check: "isAuthorized"
+        },
+        {
+            name: "aashka",
+            age:"18",
+            check: "isAuthorized"
+        },
+        {
+            name: "diya",
+            age:"19",
+            check: "notAuthorized"
+        }
+     ]
+
+     let arrAuthorized = arrOfObj.filter(
+        (item,index) => item.check== "isAuthorized"
+     )
+        console.log("arrAuthorized>>",arrAuthorized)
+
+
+        //push, pop, join, reduce, map(imp)
+        let arr5=[1,2,3,4,5]
+        arr5.push(6)
+        console.log("push>>>",arr5)
+
+        let popItem = arr5.pop(3)
+        console.log("pop>>>",arr5,"popitem index>>",popItem)
+
+        let joinItem= arr5.join(" /")
+        console.log("join thru a sign>>>",joinItem)
+
+        let reduceItem = arr5.reduce(
+            (acc,curr) => acc+curr
+        )
+        console.log("reduce used to add items>>>>",reduceItem)
+
+        // let mapArray = arr5.map(item,index)=>{
+        //     return index>2 ? item : null
+        // }
+    </script>
+<!-- nestedObj: {
+    key1 = "value1", array:[1,2,3,4,5] -->
+
+
+    
+</body>
+
+</html>

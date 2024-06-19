@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="local"></div>
+    <script>
+        //setItem and get Item
+        //takes key and value and both in string format
+        localStorage.setItem("key1","value1");
+        localStorage.setItem("key1",[1,2,3,4,5]);
+        localStorage.setItem("key1",JSON.stringify([1,2,3,4,5]));
+
+        let localItem = localStorage.getItem("key1");
+        
+        document.getElementById("local").innerHTML = `<h3>${localItem}</h3>`
+    </script>
+</body>
+</html>

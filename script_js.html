@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let myObj = {
+            name: "vihaa shah",
+            phone: "9427107324",
+            fun : objfun,
+            nestedObj: {
+                key1: "value1",
+                array: [1, 2, 3, 4, 5]
+            }
+        }
+
+        function objfun(){
+            let x=9
+            return x
+        }
+
+        // Object.freeze(myObj)
+        myObj.phone = "222222"
+        // myObj={} //gives eror
+        console.log(">>>>>>", myObj.name, myObj["phone"])
+        console.log(myObj.nestedObj["key1"])
+        console.log(myObj.nestedObj.array[3])
+        
+        // let myObj2 = myObj
+
+        //spread operator= makes a copy thus both values do not get changed
+        let myObj2 ={...myObj,address:"india"}
+        myObj2.name= "viral"
+        console.log(">>>>>>", myObj, myObj2)//both name gets changed because it acts like a reference pointer
+
+        console.log(">>>>>",
+        Object.values(myObj),
+        Object.keys(myObj),
+        Object.entries(myObj),
+        
+        )
+        console.log("function calling example>>>>>",myObj.fun())
+
+    </script>
+</body>
+
+</html>

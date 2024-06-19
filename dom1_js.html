@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id1{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btn1">Click here</button>
+    <!-- <button type="button" id="btn1" onclick="changecolor()">Click changecolor</button>
+    <button type="button" id="btn1" onmouseup="changeheight()">Click changeheight</button>
+    <button type="button" id="btn1">Click </button> -->
+    
+    <div id="id1"></div>
+
+    
+    <script>
+        document.writeln("this is a document.write")
+        let elem = document.getElementById("id1")
+        let button = document.getElementById("btn1")
+
+        elem.style.color ="greenyellow"
+
+        function addItem(){
+            elem.innerHTML += "<h1> heading </h1><br>"
+        }
+
+        function changecolor(){
+            elem.style.backgroundColor = "blue"
+        }
+
+        function changeheight(){
+            elem.style.height = "200px"
+            elem.style.width = "200px"
+        }
+
+
+        button.addEventListener("dblclick",addItem) //click, mouseover, mouseleave, mouseout
+        button.addEventListener("click",changecolor) 
+        button.addEventListener("mouseover",changeheight) 
+
+        </script>
+</body>
+</html>
